@@ -1,0 +1,78 @@
+.sideBarRoot {
+  width: 220px;
+  height: 100%;
+  transition: width ease 0.3s;
+}
+
+.sideBarRoot-hidden {
+  width: 72px;
+}
+
+.sideBarArea {
+  position: fixed;
+  width: 220px;
+  border-right: 1px solid rgb(230, 230, 230);
+  height: 100vh;
+  transition: width ease 0.3s;
+}
+
+.sideBarArea-hidden {
+  width: 72px;
+}
+
+.sideBarItem:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+.sideBarItem-bc {
+  background-color: lightgray;
+}
+.sideBarItem-bc:hover {
+  background-color: rgb(199, 199, 199);
+}
+
+.sideBarItemDisplay {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 16px 0;
+  position: relative;
+}
+
+.sideBarItemDisplay > .sideBarItemIcon {
+  margin-left: 24px;
+}
+
+.sideBarItemDisplay-hidden {
+  width: 72px;
+  overflow-x: hidden;
+}
+
+.sideBarItemIcon {
+  color: #5b5b5b;
+}
+
+.sideBarItemIcon-selected {
+  color: #dc004e;
+}
+
+.sideBarItemName {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(96, 96, 96);
+  margin-left: 36px;
+  position: absolute;
+  left: 50px;
+  opacity: 1;
+  transition: opacity ease 0.3s;
+}
+
+.sideBarItemName-hidden {
+  opacity: 0;
+}
+
+.sideBarItemName-selected {
+  font-weight: 500;
+  color: black;
+}

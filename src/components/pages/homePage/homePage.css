@@ -1,0 +1,190 @@
+.cardBackground {
+  position: relative;
+  background-color: whitesmoke;
+}
+
+.cardRoot {
+  position: relative;
+  border-radius: 6px;
+  margin: 10px;
+  width: 308px;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+  transition: all ease 0.3s;
+}
+.cardLink {
+  text-decoration-line: none;
+}
+
+.cardRoot-sideHidden {
+  width: 346px;
+}
+
+.cardContent {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  transition: all linear 0.15s;
+}
+
+.cardImg-gradient {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  height: 232px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  transition: height ease 0.3s;
+}
+
+.cardImg-gradient-hidden {
+  height: 260px;
+}
+
+.cardImg-gradient:hover .cardImg {
+  mix-blend-mode: multiply;
+}
+
+.cardImg {
+  width: 308px;
+  height: 232px;
+  /* height: 182px; */
+  object-fit: cover;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  transition: all ease 0.3s;
+}
+
+.cardImg-hidden {
+  width: 346px;
+  height: 260px;
+  /* height: 204px; */
+}
+
+.cardRoot:hover .cardTitle-Container {
+  opacity: 1;
+}
+
+.cardRoot:hover .cardhandle {
+  opacity: 1;
+}
+
+.cardRoot:hover .cardhandle-click {
+  opacity: 1;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.cardIconMore {
+  flex-direction: row-reverse;
+}
+
+.cardCategory {
+  position: absolute;
+  font-size: 22px !important;
+  top: 6px;
+  left: 6px;
+  color: rgb(150, 150, 150);
+  opacity: 0.9;
+}
+
+.cardhandle-click {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all ease 0.2s;
+}
+
+.cardhandle {
+  color: rgb(206, 206, 206);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity ease 0.2s;
+}
+
+.cardTitle-Container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 56px;
+  opacity: 0;
+  transition: opacity ease 0.2s;
+}
+
+.cardTitle {
+  color: rgba(245, 245, 245, 0.905);
+  margin-left: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.cardAvatar-Container {
+  display: flex;
+  align-items: center;
+}
+
+.cardAvatar {
+  cursor: pointer;
+  margin: 6px;
+  height: 32px !important;
+  width: 32px !important;
+}
+
+.cardAvatar-Name {
+  margin-left: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: gray;
+}
+
+.cardIcon {
+  font-size: 20px !important;
+  color: rgb(84, 84, 84);
+}
+
+.cardIcon-heart {
+  cursor: pointer;
+  color: #dc004e;
+}
+
+.goodAndView {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+.goodAndView-span {
+  color: gray;
+  margin-right: 8px;
+  font-size: 13px;
+}

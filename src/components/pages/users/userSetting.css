@@ -1,0 +1,7 @@
+.sidebar {
+  width: 300px;
+  transition-duration: 500ms;
+  transition-property: width;
+
+  transition-delay: 2s;
+}

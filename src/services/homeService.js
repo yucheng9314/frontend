@@ -1,0 +1,151 @@
+import { usersAvatar } from "./usersService";
+
+export const getUsersRecommend = [
+  {
+    cardTitle: "我们为新款保时捷911拍摄的广告",
+    cardImage: "/images/home-card001.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data001.md",
+  },
+  {
+    cardTitle: "标题2",
+    cardImage: "/images/home-card002.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题3",
+    cardImage: "/images/home-card003.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data003.md",
+  },
+  {
+    cardTitle: "标题4",
+    cardImage: "/images/home-card004.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题5",
+    cardImage: "/images/home-card005.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题6",
+    cardImage: "/images/home-card006.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题7",
+    cardImage: "/images/home-card007.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题8",
+    cardImage: "/images/home-card008.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题9",
+    cardImage: "/images/home-card009.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题10",
+    cardImage: "/images/home-card010.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题11",
+    cardImage: "/images/home-card011.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题12",
+    cardImage: "/images/home-card012.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题13",
+    cardImage: "/images/home-card013.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题14",
+    cardImage: "/images/home-card014.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题15",
+    cardImage: "/images/home-card015.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题16",
+    cardImage: "/images/home-card016.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题17",
+    cardImage: "/images/home-card017.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题18",
+    cardImage: "/images/home-card018.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题19",
+    cardImage: "/images/home-card019.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+  {
+    cardTitle: "标题20",
+    cardImage: "/images/home-card020.jpg",
+    watch: "1.9w",
+    like: "540",
+    markdown: "/markdown-files/data002.md",
+  },
+];
+
+export const mixUserCard = usersAvatar.map((avatar, index) => {
+  return {
+    user: avatar,
+    recommed: getUsersRecommend[index],
+  };
+});
