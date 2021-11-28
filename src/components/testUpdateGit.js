@@ -7,6 +7,11 @@ function testUpdateGit(props) {
     return (
         <div>
             test!
+         test! test!
+         test!
+         test!
+         test!
+         test!
         </div>
     )
 }
