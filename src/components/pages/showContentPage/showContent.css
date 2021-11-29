@@ -1,4 +1,5 @@
-.popup,
+.popup-root,
+.popup-inner,
 .popup-background,
 .popup-overlay {
   top: 0;
@@ -7,55 +8,78 @@
   right: 0;
 }
 
-.popup {
+.popup-root {
+  position: relative;
+  z-index: 11;
+}
+.popup-root .popup-inner {
+  position: relative;
   display: flex;
-  position: fixed;
-  /* min-height: 100vh; */
-  /* width: 100%; */
-  align-content: center;
   justify-content: center;
-  overflow: auto;
-  z-index: 9;
+  align-items: center;
 }
 
-.popup-background {
+.popup-root .popup-inner .popup-background {
   position: fixed;
   background-color: black;
   opacity: 0.9;
+  margin-right: 0px;
 }
 
-.popup-overlay {
-  position: relative;
-  /* height: 100vh; */
-  /* min-height: 100vh; */
+.popup-root .popup-inner .popup-overlay {
+  position: fixed;
+  overflow: auto;
+  width: 100%;
 }
 
-/* .popup .popup-overlay.popup-overlay-authorhead {
-  position: relative;
-  max-width: 1400px;
-
-  margin-left: auto;
-  margin-right: auto;
-} */
-
-.popup .popup-overlay .popup-overlay-project {
+.popup-root .popup-inner .popup-overlay .popup-overlay-project {
   position: relative;
   min-height: 100vh;
-  background-color: white;
-  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
-.popup .popup-overlay .popup-overlay-project .markdown-content {
+
+@media (min-width: 1025px) {
+  .popup-root .popup-inner .popup-overlay .popup-overlay-project {
+    max-width: 1400px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1870px) {
+  .popup-root .popup-inner .popup-overlay .popup-overlay-project {
+    max-width: calc(100% - 190px);
+  }
+}
+
+.popup-root
+  .popup-inner
+  .popup-overlay
+  .popup-overlay-project
+  .popup-overlay-project-authorheader {
+  padding: 14px 0px;
+}
+.popup-root
+  .popup-inner
+  .popup-overlay
+  .popup-overlay-project
+  .popup-overlay-project-content {
+  min-height: 100vh;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 72px;
+}
+
+.popup-root
+  .popup-inner
+  .popup-overlay
+  .popup-overlay-project
+  .markdown-content {
   position: relative;
   padding-top: 0.38rem;
   margin: 0px 36px;
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center;
-  align-content: center; */
 }
+
 .markdown-content img {
   position: relative;
   left: -36px;
