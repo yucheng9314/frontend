@@ -2,7 +2,6 @@
 
 Lorem ipsum dolor sit, amet
 ⭐️`react-markdown` is a markdown component for React.
-
 ![](../bigImages/45b632131413319.6194a2d1018db.jpg)
 ![](../bigImages/samy-seffadj-fsi-1030-walls-v026.gif)
 

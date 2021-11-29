@@ -64,12 +64,13 @@
   margin-left: 36px;
   position: absolute;
   left: 50px;
-  opacity: 1;
-  transition: opacity ease 0.3s;
+  /* opacity: 1; */
+  /* transition: opacity ease 0.3s; */
 }
 
 .sideBarItemName-hidden {
-  opacity: 0;
+  /* opacity: 0; */
+  display: none;
 }
 
 .sideBarItemName-selected {
