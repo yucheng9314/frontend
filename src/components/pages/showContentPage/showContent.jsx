@@ -61,6 +61,7 @@ function ShowContent() {
           <div className="popup-overlay-project">
             <div className="popup-overlay-project-authorheader">
               <Avatar src={popupdata.user.avatar} />
+              <p className="authorheader-name">{popupdata.user.username}</p>
             </div>
             {loading && (
               <div className="popup-overlay-project-content">
