@@ -1,26 +1,6 @@
 import React, { useRef, useState } from "react";
-import { makeStyles } from "@material-ui/core";
 import { Canvas, useFrame } from "@react-three/fiber";
-
-const useStyles = makeStyles((theme) => ({
-  background: {
-    width: "100%",
-    height: "100vh",
-    // backgroundColor: "#F0F0F0",
-  },
-  engine: {
-    // borderRadius: 3,
-    cursor: "pointer",
-    margin: theme.spacing(2),
-    width: "120vh",
-    height: "68vh",
-    backgroundColor: "#383535",
-  },
-  camera: {
-    margin: theme.spacing(2),
-  },
-  toolbar: theme.mixins.toolbar,
-}));
+import "./3dengine.css";
 
 function Box(props) {
   const ref = useRef();
@@ -48,20 +28,15 @@ function Box(props) {
 }
 
 const ThreeDEngine = () => {
-  const classes = useStyles();
-
   return (
-    <div>
-      <div className={classes.toolbar} />
-      <div className={classes.engine}>
-        <Canvas>
-          <ambientLight intensity={0.5} />
-          <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-          <pointLight position={[-10, -10, -10]} />
-          <Box position={[-1.2, 0, 0]} />
-          <Box position={[1.2, 0, 0]} />
-        </Canvas>
-      </div>
+    <div className="engine-container">
+      <Canvas>
+        <ambientLight intensity={0.5} />
+        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+        <pointLight position={[-10, -10, -10]} />
+        <Box position={[-1.2, 0, 0]} />
+        <Box position={[1.2, 0, 0]} />
+      </Canvas>
     </div>
   );
 };

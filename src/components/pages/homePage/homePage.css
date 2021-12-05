@@ -5,7 +5,7 @@
 
 .cardRoot {
   position: relative;
-  border-radius: 6px;
+  border-radius: 8px;
   margin: 10px;
   width: 308px;
   background-color: white;
@@ -22,8 +22,8 @@
 }
 
 .cardContent {
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -32,8 +32,8 @@
 }
 
 .cardImg-gradient {
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
   height: 232px;
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -57,8 +57,8 @@
   height: 232px;
   /* height: 182px; */
   object-fit: cover;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
   transition: all ease 0.3s;
 }
 
@@ -91,13 +91,24 @@
   flex-direction: row-reverse;
 }
 
-.cardCategory {
+.cardCategory-container {
   position: absolute;
-  font-size: 22px !important;
-  top: 6px;
-  left: 6px;
-  color: rgb(150, 150, 150);
-  opacity: 0.9;
+  top: 4px;
+  left: 4px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: rgba(109, 109, 109, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0.6; */
+}
+
+.cardCategory {
+  font-size: 14px !important;
+  color: rgb(186, 186, 186);
+  /* opacity: 1 !important; */
 }
 
 .cardhandle-click {

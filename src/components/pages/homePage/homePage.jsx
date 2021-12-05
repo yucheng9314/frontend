@@ -3,6 +3,7 @@ import "./homePage.css";
 import Avatar from "@material-ui/core/Avatar";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
+import PhotoSizeSelectActualOutlinedIcon from "@material-ui/icons/PhotoSizeSelectActualOutlined";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import SecondBar from "./secondBar";
@@ -80,7 +81,9 @@ const HomePage = ({ siderBarState }) => {
                       src={card.recommed.cardImage}
                       alt=""
                     />
-                    <PhotoLibraryIcon className="cardCategory" />
+                    <div className="cardCategory-container">
+                      <PhotoSizeSelectActualOutlinedIcon className="cardCategory" />
+                    </div>
                     <div className="cardhandle-click">
                       <MoreHorizIcon className="cardhandle" />
                     </div>
